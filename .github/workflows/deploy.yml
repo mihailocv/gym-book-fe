@@ -5,6 +5,14 @@ on:
     branches:
       - main
       - development
+    paths-ignore:
+      - '**.md'
+      - 'LICENSE'
+      - '.vscode/**'
+      - '.cursor/**'
+      - '.agents/**'
+      - '.github/dependabot.yml'
+      - '.husky/**'
   pull_request:
     branches:
       - main
