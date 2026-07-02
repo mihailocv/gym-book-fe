@@ -31,7 +31,4 @@ COPY --chown=nginx:nginx --from=builder /app/dist/*/browser /usr/share/nginx/htm
 USER nginx
 EXPOSE 8080
 
-HEALTHCHECK --interval=30s --timeout=10s --retries=3 --start-period=10s \
-  CMD wget --quiet --tries=1 --spider http://localhost:8080/ || exit 1
-
 CMD ["nginx", "-g", "daemon off;"]
