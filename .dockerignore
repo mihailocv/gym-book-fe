@@ -60,3 +60,20 @@ docker-compose*.yml
 *.bak
 *.old
 *.tmp
+
+# ================================
+# CI, hooks and tooling (not needed in image build)
+# ================================
+.github
+.husky
+.agents
+eslint.config.js
+.prettierrc
+.editorconfig
+skills-lock.json
+
+# ================================
+# Docs
+# ================================
+README.md
+LICENSE
